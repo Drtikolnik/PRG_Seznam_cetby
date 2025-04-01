@@ -41,7 +41,7 @@ public class Main2 {
         System.out.println("CHCEŠ ZMĚNIT NĚKTERÝ NÁZEV KNIHY? - ano / ne");
         String zmenaJmena = sc.nextLine();
 
-        switch (zmenaJmena) {//.ů
+        switch (zmenaJmena) {
             case "ano":
                 System.out.println("Jaký název knihy by jsi chtěl Změnit? - číslo 1 pro 1. knihu atd.");
                 int zmena = sc.nextInt() -1;
@@ -75,6 +75,12 @@ public class Main2 {
                     }
                 }
                 break;
+        }
+
+        //vypsání knih od autora kterého je nejvíce
+        ArrayList<String> jmenaAutoru = new ArrayList<>();
+        for (Kniha kniha : knihy) {
+            jmenaAutoru.add(kniha.getAutor());
         }
 
 
