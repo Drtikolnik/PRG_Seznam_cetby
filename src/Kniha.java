@@ -13,7 +13,6 @@ public class Kniha {
     public void setNazev(String nazev) {
         this.nazev = nazev;
     }
-
     public String getNazev() {
         return nazev;
     }
